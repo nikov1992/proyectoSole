@@ -32,14 +32,16 @@ header{
 }
 
 .abrir-menu, 
-.cerrar-menu {
+.cerrar-menu,
+.btnMenu{
     display: none;
 }
 
 
 @media screen and (max-width: 550px) {
     .abrir-menu,
-    .cerrar-menu{
+    .cerrar-menu,
+    .btnMenu{
         display: block;
         cursor: pointer;
     }
@@ -74,5 +76,92 @@ header{
     .nav-list li a{
         color: #ececec;
     }
+
+    .tituloCentral{
+        margin-top: 1rem;
+        display: grid;
+        justify-content: center;
+        justify-items: center;
+        text-align: center;
+        font-family: "Open Sans", sans-serif;
+        font-size: 14px;
+        line-height: 1.8;
+        gap: 1rem;
+    }
+
+    .tituloCentral img{
+        width: 80%;
+    }
+
+    .tituloCentral p{
+     text-align: justify;
+     margin-left: 2rem;
+     margin-right: 2rem;
+    }
+
+    .sectionConocer{
+        display: grid;
+        justify-items: center;
+        justify-content: center;
+        gap:1.5rem;
+
+    }
+
+    .sectionConocer .textoCuerpo{
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+
+    }
+    .sectionConocer img{
+        width: 50%;
+    }
+    
+    .sectionServicios .tituloServicios{
+        text-align: center;
+    }
+
+      .Conteiner4 .block {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: 0 auto;
+        width: 85%;
+        justify-items: center;
+        align-items: center;
+        align-content: center;
+      }
+      
+      .block .img-comida{
+        display: grid;
+        justify-items: center;
+      }
+
+      .Conteiner4 .subtitulo2 {
+        display: flex;
+        background: #96c29f;
+        letter-spacing: 3px;
+        margin-top: -40px;
+        width: 250px;
+        height: 55px;
+        font-size: 17px;
+        color: #ffff;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
+    
+      .Conteiner4 img {
+        width: 80%;
+        border-radius: 10px;
+        margin-bottom: 2rem;
+
+      }
+    
+      .Conteiner4 .desarrollo {
+        margin-top: 5px;
+        color: #5a5c5b;
+        text-align: justify;
+        font-size: medium;
+        
+      }
 
 }

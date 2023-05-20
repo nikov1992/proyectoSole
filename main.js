@@ -9,3 +9,7 @@ abrir.addEventListener("click", () =>{
 cerrar.addEventListener("click", () =>{
     nav.classList.remove("visible");
 })
+
+const titulo1 = document.getElementById('titulo')
+
+console.log(titulo1);

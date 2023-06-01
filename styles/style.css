@@ -71,7 +71,7 @@ header {
     top: 0;
     right: 0;
     bottom: 0;
-    /* background-color: #96c29f; */
+    background-color: #96c29f;
     padding: 1rem;
     box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
     height: 100%;

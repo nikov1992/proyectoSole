@@ -9,12 +9,16 @@
   src: url(../fonts/Vintage.otf);
 }
 
+body{
+background-color: rgb(254, 251, 255);
+}
+
 header {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 2rem;
-  background-color: #ececec;
+  background-color: #fc59a3;
   font-family: sans-serif;
   height: 1rem;
   width: 100%;
@@ -56,6 +60,7 @@ header {
     /* padding: 5px; */
     cursor: pointer;
     position: sticky;
+    font-family: sans-serif;
   }
 
   .nav {
@@ -66,12 +71,12 @@ header {
     flex-direction: column;
     align-items: end;
     font-size: 1.25rem;
-    /* gap: 1rem; */
+    gap: 1rem;
     position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
-    background-color: #96c29f;
+    background-color: #87c830;
     padding: 1rem;
     box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
     height: 100%;
@@ -81,7 +86,6 @@ header {
   .nav.visible {
     opacity: 1;
     visibility: visible;
-
   }
 
   .nav-list {
@@ -98,7 +102,7 @@ header {
   
   .nav-list li a {
     transition: .5s linear;
-    color: #de2889;
+    color: #fc59a3;
     font-family: "tituloCentral";
     font-size: 30px;
     /* border-radius: 10px; */
@@ -118,7 +122,7 @@ header {
 
   .tituloCentral .t1,
   .subT1 {
-    color: #de2889;
+    color: #fc59a3;
     font-size: 3rem;
     font-family: "tituloCentral";
   }
@@ -138,6 +142,13 @@ header {
     justify-items: center;
     justify-content: center;
     gap: 1.5rem;
+  }
+
+  .sectionConocer .tituloCuerpo,
+  .tituloServicios{
+    font-family: "tituloCentral";
+    font-size: 38px;
+    color: #fc59a3;
   }
 
   .sectionConocer .textoCuerpo {
@@ -169,7 +180,7 @@ header {
 
   .Conteiner4 .subtitulo2 {
     display: flex;
-    background: #96c29f;
+    background: #87c830;
     letter-spacing: 3px;
     margin-top: -40px;
     width: 250px;
@@ -203,16 +214,29 @@ header {
   }
 
   .contacto .cabecera {
-    margin-top: 20px;
+    
     width: 100%;
     font-size: 60px;
     letter-spacing: 3.5px;
     text-align: center;
-    margin-bottom: -20px;
-    color: #de2889;
-    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: #fc59a3;
+    font-size: 4rem;
     font-family: "tituloCentral";
+    
   }
+
+  .contacto .nombre, 
+  .apellido, 
+  .telefono, 
+  .correo, 
+  .consulta{
+    color: #fc59a3;
+    font-size: 2rem;
+    font-family: "tituloCentral";    
+  }
+
+
 
   /* Estilos generales del botón */
   .contacto .nutrition-button {
@@ -231,12 +255,12 @@ header {
   }
 
   .contacto .nutrition-button:hover {
-    background-color: #45a049;
+    background-color: #87c830;
   }
 
   .nutrition-button:focus {
     outline: none;
-    box-shadow: 0 0 5px #45a049;
+    box-shadow: 0 0 5px #87c830;
   }
 
   /* css FOOTER */

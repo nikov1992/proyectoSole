@@ -13,7 +13,13 @@ const titulo1 = document.getElementById('titulo')
 console.log(titulo1);
 
 
-
+//con esto solo hago que hacepte numero en parte de contacto telefono
+const input = document.getElementById("inpTelefono");
+input.addEventListener("input", function(event) {
+  const inputValue = event.target.value;
+  const numbersOnly = inputValue.replace(/[^0-9]/g, "");
+  input.value = numbersOnly;
+});
 
 
 

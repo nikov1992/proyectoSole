@@ -9,6 +9,16 @@
   src: url(../fonts/Vintage.otf);
 }
 
+@font-face {
+  font-family: "fontHeader";
+  src: url(../fonts/Pakuintho-BWEP8.ttf);
+}
+
+@font-face {
+  font-family: "titulo";
+  src: url(../fonts/Titulo.otf);
+}
+
 body{
 background-color: rgb(254, 251, 255);
 }
@@ -16,34 +26,36 @@ background-color: rgb(254, 251, 255);
 header {
   display: flex;
   justify-content: space-between;
-  /* padding: 2rem; */
-  background-color: #fc59a3;
+  /* background-color: #fc59a3; */
   font-family: sans-serif;
   padding: 1%;
   width: 100%;
-  justify-items: center;
+  height: 100px;
   align-items: center;
   
-
 }
 
 .logo {
-  max-width: 3.5rem;
+  max-width: 10%;
 }
 
 .nav-list {
   display: flex;
   list-style-type: none;
   gap: 1rem;
-  /* background-color: red; */
-
+  font-family: "fontHeader";
+  font-size: 2rem;
+  color: #fff;
+  margin-top: 15px;
 }
 
 .nav-list li a {
   text-decoration: none;
-  color: #1c1c1c;
+  color: #fff;
+  background-color:rgba(227, 71, 126, 0.5);
+  padding: 10px;
+  border-radius: 15px;
 }
-
 
 .abrir-menu,
 .cerrar-menu,
@@ -51,7 +63,230 @@ header {
   display: none;
 }
 
+
+
+
+/*----- TITULO CENTRAL----- */
+.tituloCentral {
+  margin-top: 1rem;
+  display: grid;
+  justify-content: center;
+  justify-items: center;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  line-height: 1.8;
+  gap: 1rem;
+  padding: 0.2rem;
+}
+
+.tituloCentral .t1,
+  .subT1 {
+    color: #fc59a3;
+    font-size: 70px;
+    font-family: "titulo";
+  }
+  
+
+
+.tituloCentral img {
+  width: 60%;
+  border-radius: 20px;
+}
+
+.tituloCentral .imgNutri {
+  width: 100%;
+  margin-top: 30px;
+
+}
+
+.tituloCentral p {
+  text-align: justify;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  line-height: 35px;
+  /* text-align: center; */
+}
+
+
+.nav-list a:hover {
+  transition: all 0.3s ease;
+  /* padding: 5px 10px; */
+  background-color: #de2889;
+  color: #ffff;
+  border-radius: 15px;
+  font-size: 2.5rem;
+  cursor: pointer;
+}
+
+
+
+/* SECTION CONOCER */
+.sectionConocer {
+  display: grid;
+  justify-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.sectionConocer .tituloCuerpo,
+.tituloServicios{
+  font-family: "tituloCentral";
+  font-size: 90px;
+  color: #fc59a3;
+}
+
+.sectionConocer .textoCuerpo {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+.sectionConocer img {
+  width: 50%;
+}
+
+.sectionServicios .tituloServicios {
+  text-align: center;
+}
+
+/* SECTION DE MIS SERVICIOS !!!!  */
+
+.Conteiner4{
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+}
+
+.Conteiner4 .block {
+  display: grid;
+  grid-template-columns: 1FR;
+  margin: 0 auto;
+  width: 85%;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+}
+
+.block .img-comida {
+  display: grid;
+  justify-items: center;
+}
+
+
+.Conteiner4 .subtitulo2 {
+  display: flex;
+  background: #87c830;
+  letter-spacing: 3px;
+  margin-top: -40px;
+  width: 250px;
+  height: 55px;
+  font-size: 17px;
+  color: #ffff;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.Conteiner4 img {
+  width: 80%;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+}
+
+.Conteiner4 .desarrollo {
+  margin-top: 5px;
+  color: #5a5c5b;
+  text-align: justify;
+  font-size: medium;
+}
+
+
+
+/* CSS DE CONTACTO CON BOOTSTRAP */
+.contacto {
+  display: grid;
+  /* margin: 0px; */
+  /* padding: 20%; */
+  margin-left:20%;
+  margin-right:20%;
+  gap: 0.5rem;
+  /* margin-top: -200px; */
+}
+
+.contacto .cabecera {
+  
+  width: 100%;
+  /* font-size: 60px; */
+  letter-spacing: 3.5px;
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #fc59a3;
+  font-size: 10rem;
+  font-family: "tituloCentral";
+  
+}
+
+.contacto .nombre, 
+.apellido, 
+.telefono, 
+.correo, 
+.consulta{
+  color: #fc59a3;
+  font-size: 2rem;
+  font-family: "tituloCentral";    
+}
+
+
+/* FOOOOOOOTERRRRR */
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+  align-items: center;
+  padding: 0.3rem;
+}
+.footer .redes {
+  display: flex;
+  justify-content: space-evenly;
+  flex-grow: 5;
+}
+
+.footer .empresa {
+  font-size: 70%;
+  color: white;
+}
+.footer .redes button {
+  width: 2rem;
+}
+
+.footer .redes img {
+  width: 1.5rem;
+}
+
+.Conteiner4 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
+  padding: 50px;
+}
+
+
 @media screen and (max-width: 550px) {
+
+  .Conteiner4 {
+    display: grid;
+    grid-template-columns: 1fr;;
+    padding: 0;
+  }
+
+  header{
+    height: 50px;
+    background-color:  #87c830;
+  }
+
+
   .abrir-menu,
   .cerrar-menu,
   .btnMenu {
@@ -61,7 +296,11 @@ header {
     font-size: 1.3rem;
     background-color: transparent;
     cursor: pointer;
-    font-family: "tituloCentral";
+    font-family: "titulo";
+    /* text-align: center; */
+    /* justify-items: center;
+    align-items: baseline;
+    align-content: center; */
     
   }
 
@@ -69,6 +308,11 @@ header {
     top: 10;
     right: 0;
     bottom: 0;
+  }
+
+  .logo {
+    max-width: 20%;
+    margin-top: 40px;
   }
 
   .nav {
@@ -82,7 +326,7 @@ header {
     top: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(135, 200, 48,0.95);
+    background-color: rgba(251, 251, 251, 0.95);
     padding: 1rem;
     width: 100%;
     justify-content: center;
@@ -111,9 +355,13 @@ header {
   
   .nav-list li a {
     transition: .5s linear;
-    color: #fc59a3;
+    color: #87c830;
     font-family: "tituloCentral";
     font-size: 50px;
+    background-color:inherit;
+    border-radius: inherit;
+    padding: 0;
+
   }
 
   .tituloCentral {
@@ -132,9 +380,22 @@ header {
   .tituloCentral .t1,
   .subT1 {
     color: #fc59a3;
-    font-size: 3rem;
-    font-family: "tituloCentral";
+    font-size: 1.9rem;
+    font-family: "titulo";
+    margin-bottom: -20px;
+    margin-top: 15px;
+
   }
+
+  .tituloCentral .t2,
+  .subT1 {
+    color: #fc59a3;
+    font-size: 0.8rem;
+    font-family: "titulo";
+
+  }
+
+
 
   .tituloCentral img {
     width: 80%;
@@ -167,10 +428,11 @@ header {
   .sectionConocer img {
     width: 50%;
   }
-
+  
   .sectionServicios .tituloServicios {
     text-align: center;
   }
+  
 
   .Conteiner4 .block {
     display: grid;
@@ -200,7 +462,7 @@ header {
     align-items: center;
     text-align: center;
   }
-
+  
   .Conteiner4 img {
     width: 80%;
     border-radius: 10px;
@@ -263,6 +525,12 @@ header {
     transition: background-color 0.3s ease;
   }
 
+  .contacto .placeContacto {
+    text-align: start;
+    /* buscar poosicion del placeHOLDER ARRIBA  */
+    height: 10rem;
+  }
+
   .contacto .nutrition-button:hover {
     background-color: #87c830;
   }
@@ -312,6 +580,7 @@ header {
     width: 3rem;
     animation: whatsapp-animation 1s infinite;
   }
+  
 
   @keyframes whatsapp-animation {
     0% {
@@ -322,6 +591,14 @@ header {
     }
     10% {
       transform: translateY(0);
-    }
-  
+    } 
+  }
 }
+
+/* .Conteiner4 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
+  padding: 10px;
+} */
+

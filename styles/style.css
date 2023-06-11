@@ -19,8 +19,28 @@
   src: url(../fonts/Titulo.otf);
 }
 
+@font-face {
+  font-family: "textoGral3";
+  src: url(../fonts/textoGral.ttf);
+}
+
 body{
 background-color: rgb(254, 251, 255);
+}
+
+.btn-sl{
+  display: inline-block;
+  padding: 4px;
+  border: none;
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  background-color: #4caf50;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 header {
@@ -100,18 +120,27 @@ header {
 
 }
 
-.tituloCentral p {
+
+.tituloCentral .subtituloP{
+
+  font-size: large;
+  font-family: "textoGral3";
+
+}
+  
+p{
   text-align: justify;
-  margin-left: 2rem;
-  margin-right: 2rem;
-  line-height: 35px;
-  /* text-align: center; */
+  /* margin-left: 2rem; */
+  /* margin-right: 2rem; */
+  line-height: 30px;
+  font-family: "textoGral3";
+  font-weight: bold;
+  font-size: large;
 }
 
 
 .nav-list a:hover {
   transition: all 0.3s ease;
-  /* padding: 5px 10px; */
   background-color: #de2889;
   color: #ffff;
   border-radius: 15px;
@@ -121,7 +150,7 @@ header {
 
 
 
-/* SECTION CONOCER */
+/* SECTION CONOCER --------------*/
 .sectionConocer {
   display: grid;
   justify-items: center;
@@ -272,7 +301,14 @@ header {
   padding: 50px;
 }
 
+/* 
 
+
+CELULAR!!!
+
+
+
+*/
 @media screen and (max-width: 550px) {
 
   .Conteiner4 {
@@ -297,11 +333,6 @@ header {
     background-color: transparent;
     cursor: pointer;
     font-family: "titulo";
-    /* text-align: center; */
-    /* justify-items: center;
-    align-items: baseline;
-    align-content: center; */
-    
   }
 
   .nav .btnMenu{
@@ -377,6 +408,7 @@ header {
     padding: 0.2rem;
   }
 
+  
   .tituloCentral .t1,
   .subT1 {
     color: #fc59a3;
@@ -417,14 +449,10 @@ header {
   .sectionConocer .tituloCuerpo,
   .tituloServicios{
     font-family: "tituloCentral";
-    font-size: 38px;
-    color: #fc59a3;
+    font-size: 45px;
   }
 
-  .sectionConocer .textoCuerpo {
-    margin-left: 1.5rem;
-    margin-right: 1.5rem;
-  }
+  
   .sectionConocer img {
     width: 50%;
   }

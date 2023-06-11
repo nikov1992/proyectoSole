@@ -22,5 +22,20 @@ input.addEventListener("input", function(event) {
 });
 
 
+let hideTextBtns = document.getElementById('hideTextBtns')
+let hideText = document.getElementById('hideText')
+
+
+hideTextBtns.addEventListener('click' , mostrarTexto)
+
+function mostrarTexto (){
+  hideText.classList.toggle('show')
+  if(hideText.classList.contains('show')){
+    hideTextBtns.innerHTML = 'Leer menos';
+  }
+  else
+  hideTextBtns.innerHTML = 'Seguir Leyendo';
+}
+
 
 

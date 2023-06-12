@@ -168,11 +168,14 @@ p{
 }
 
 .sectionConocer .textoCuerpo {
+  display: grid;
   margin-left: 1.5rem;
   margin-right: 1.5rem;
+  justify-items: center;
 }
 .sectionConocer img {
   width: 50%;
+  border-radius: 20px;
 }
 
 .sectionServicios .tituloServicios {

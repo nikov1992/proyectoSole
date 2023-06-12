@@ -37,5 +37,20 @@ function mostrarTexto (){
   hideTextBtns.innerHTML = 'Seguir Leyendo';
 }
 
+let hideTextBtns2 = document.getElementById('hideTextBtns2')
+let hideText2 = document.getElementById('hideText2')
+
+
+hideTextBtns2.addEventListener('click' , mostrarTexto2)
+
+function mostrarTexto2 (){
+  hideText2.classList.toggle('show2')
+  if(hideText2.classList.contains('show2')){
+    hideTextBtns2.innerHTML = 'Leer menos';
+  }
+  else
+  hideTextBtns2.innerHTML = 'Seguir Leyendo';
+}
+
 
 

@@ -24,11 +24,31 @@
   src: url(../fonts/textoGral.ttf);
 }
 
-body{
-background-color: rgb(254, 251, 255);
+.what-btn {
+  position: fixed;
+  bottom: 10px;
+  right: 20px;
+  z-index: 9999;
 }
 
-.btn-sl{
+.what-btn img {
+  width: 3rem;
+  animation: whatsapp-animation 1s infinite;
+}
+
+@keyframes whatsapp-animation {
+  0% {
+    transform: translateY(0);
+  }
+  20% {
+    transform: translateY(-30px);
+  }
+  10% {
+    transform: translateY(0);
+  }
+}
+
+.btn-sl {
   /* display: inline-block; */
   padding: 3px;
   border: none;
@@ -53,17 +73,28 @@ header {
   width: 100%;
   height: 100px;
   align-items: center;
-  
+  background-color: aliceblue;
+}
+
+header .menu {
+  height: 100%;
 }
 
 .logo {
-  max-width: 10%;
+  width: 150px;
+  margin-top: 50px;
+}
+
+.menu .letraMenu {
+  display: none;
+  /* visibility: hidden; */
+  /* background-color: #de2889; */
 }
 
 .nav-list {
   display: flex;
   list-style-type: none;
-  gap: 1rem;
+  gap: 2rem;
   font-family: "fontHeader";
   font-size: 2rem;
   color: #fff;
@@ -74,7 +105,7 @@ header {
 .nav-list li a {
   text-decoration: none;
   color: #fff;
-  background-color:rgba(227, 71, 126, 0.5);
+  background-color: rgba(227, 71, 126, 0.5);
   padding: 10px;
   border-radius: 15px;
 }
@@ -84,63 +115,6 @@ header {
 .btnMenu {
   display: none;
 }
-
-
-
-
-/*----- TITULO CENTRAL----- */
-.tituloCentral {
-  margin-top: 1rem;
-  display: grid;
-  justify-content: center;
-  justify-items: center;
-  text-align: center;
-  font-family: "Open Sans", sans-serif;
-  font-size: 14px;
-  line-height: 1.8;
-  gap: 1rem;
-  padding: 0.2rem;
-}
-
-.tituloCentral .t1,
-  .subT1 {
-    color: #fc59a3;
-    font-size: 70px;
-    font-family: "titulo";
-  }
-  
-
-
-.tituloCentral img {
-  width: 60%;
-  border-radius: 20px;
-}
-
-.tituloCentral .imgNutri {
-  width: 100%;
-  margin-top: 30px;
-
-}
-
-
-.tituloCentral .subtituloP{
-  display: grid;
-  font-size: large;
-  font-family: "textoGral3";
-  justify-items: center;
-  
-
-}
-  
-p{
-  text-align: justify;
-  line-height: 30px;
-  font-family: "textoGral3";
-  font-weight: bold;
-  font-size: large;
-}
-
-
 .nav-list a:hover {
   transition: all 0.3s ease;
   background-color: #de2889;
@@ -150,21 +124,50 @@ p{
   cursor: pointer;
 }
 
-
-
-/* SECTION CONOCER --------------*/
-.sectionConocer {
+/*----- TITULO CENTRAL-------------- */
+.tituloCentral {
+  margin-top: 1rem;
   display: grid;
-  justify-items: center;
   justify-content: center;
-  gap: 1.5rem;
+  justify-items: center;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  /* font-size: 14px; */
+  line-height: 1.8;
+  gap: 1rem;
+  padding: 0.2rem;
 }
 
-.sectionConocer .tituloCuerpo,
-.tituloServicios{
-  font-family: "tituloCentral";
-  font-size: 90px;
+.tituloCentral .t1,
+.subT1 {
   color: #fc59a3;
+  font-size: 200%;
+  font-family: "titulo";
+  width: 30%;
+}
+
+.tituloCentral .t2 {
+  color: #fc59a3;
+  font-size: 20px;
+  font-family: "titulo";
+  margin-top: -25px;
+  margin-bottom: 20px;
+}
+
+/* IMAGEN DE SOLE */
+.tituloCentral img {
+  width: 55%;
+  border-radius: 20px;
+}
+
+.tituloCentral .imgNutri {
+  width: 70%;
+  margin-top: 30px;
+}
+
+.tituloCentral .imgNutri img {
+  width: 70%;
+  margin-top: 30px;
 }
 
 .sectionConocer .textoCuerpo {
@@ -173,6 +176,67 @@ p{
   margin-right: 1.5rem;
   justify-items: center;
 }
+
+.tituloCentral .subtituloP {
+  display: grid;
+  font-size: large;
+  font-family: "textoGral3";
+  justify-items: center;
+  padding: 2%;
+  margin-left: 10%;
+  margin-right: 10%;
+  background-color: #c7ddac;
+}
+
+p {
+  text-align: justify;
+  line-height: 30px;
+  font-family: "textoGral3";
+  /* font-weight: bold; */
+  font-size: large;
+  
+}
+
+.btn-sl {
+  display: none;
+}
+
+/* SECTION CONOCER --------------*/
+.sectionConocer {
+  display: grid;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  text-decoration: NONE;
+  width: 100%;
+}
+
+.sectionConocer .body {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  width: 100%;
+  padding: 1.2%;
+
+  /* background-color: hsl(297, 100%, 96%); */
+}
+
+.sectionConocer .tituloCuerpo,
+.tituloServicios {
+  font-family: "tituloCentral";
+  font-size: 90px;
+  color: #fc59a3;
+}
+
+.sectionConocer .textoCuerpo {
+  display: grid;
+  /* margin-left: 1.5rem; */
+  margin-right: 8.5rem;
+  justify-items: center;
+}
+
 .sectionConocer img {
   width: 50%;
   border-radius: 20px;
@@ -184,7 +248,7 @@ p{
 
 /* SECTION DE MIS SERVICIOS !!!!  */
 
-.Conteiner4{
+.Conteiner4 {
   display: grid;
   justify-items: center;
   align-items: center;
@@ -207,12 +271,11 @@ p{
   justify-items: center;
 }
 
-
 .Conteiner4 .subtitulo2 {
   display: flex;
   background: #87c830;
   letter-spacing: 3px;
-  margin-top: -40px;
+  margin-top: -75px;
   width: 250px;
   height: 55px;
   font-size: 17px;
@@ -235,21 +298,19 @@ p{
   font-size: medium;
 }
 
-
-
 /* CSS DE CONTACTO CON BOOTSTRAP */
 .contacto {
   display: grid;
   /* margin: 0px; */
   /* padding: 20%; */
-  margin-left:20%;
-  margin-right:20%;
+  margin-left: 20%;
+  margin-right: 20%;
   gap: 0.5rem;
+  margin-bottom: 10%;
   /* margin-top: -200px; */
 }
 
 .contacto .cabecera {
-  
   width: 100%;
   /* font-size: 60px; */
   letter-spacing: 3.5px;
@@ -258,19 +319,34 @@ p{
   color: #fc59a3;
   font-size: 10rem;
   font-family: "tituloCentral";
-  
 }
 
-.contacto .nombre, 
-.apellido, 
-.telefono, 
-.correo, 
-.consulta{
+.contacto .nombre,
+.apellido,
+.telefono,
+.correo,
+.consulta {
   color: #fc59a3;
   font-size: 2rem;
-  font-family: "tituloCentral";    
+  font-family: "tituloCentral";
 }
 
+.contacto .nutrition-button {
+  width: 50%;
+  height: 150%;
+  padding: 3px;
+  border: none;
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  font-family: "textoGral3";
+  background-color: #4caf50;
+  cursor: pointer;
+  justify-self: center;
+}
 
 /* FOOOOOOOTERRRRR */
 
@@ -280,30 +356,33 @@ p{
   background-color: black;
   align-items: center;
   padding: 0.3rem;
+  width: 100%;
+  height: 70px;
 }
 .footer .redes {
   display: flex;
-  justify-content: space-evenly;
   flex-grow: 5;
+  gap: 6%;
+  /* padding: 5%; */
 }
 
 .footer .empresa {
-  font-size: 70%;
+  font-size: 100%;
   color: white;
 }
 .footer .redes button {
   width: 2rem;
+  padding: 1%;
 }
 
 .footer .redes img {
-  width: 1.5rem;
+  width: 2.5rem;
 }
 
 .Conteiner4 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 2rem;
-  padding: 50px;
 }
 
 /* 
@@ -315,27 +394,30 @@ CELULAR!!!
 
 */
 @media screen and (max-width: 550px) {
-
   .Conteiner4 {
     display: grid;
-    grid-template-columns: 1fr;;
+    grid-template-columns: 1fr;
     padding: 0;
   }
 
-  header{
+  header {
     height: 50px;
-    background-color:  #87c830;
+    background-color: #87c830;
     display: flex;
     justify-content: space-between;
   }
 
-  header .menu{
+  header .menu {
     display: flex;
     align-items: center;
   }
 
-  header .letraMenu{
+  header .letraMenu {
     font-family: "titulo";
+  }
+
+  .menu .letraMenu {
+    display: block;
   }
 
   .abrir-menu,
@@ -350,7 +432,7 @@ CELULAR!!!
     padding: 10px;
   }
 
-  .nav .btnMenu{
+  .nav .btnMenu {
     top: 10;
     right: 0;
     bottom: 0;
@@ -361,8 +443,12 @@ CELULAR!!!
     margin-top: 40px;
   }
 
+  .menu .letraMenu {
+    display: show;
+  }
+
   .nav {
-    transition: .3s linear ;
+    transition: 0.3s linear;
     opacity: 0;
     visibility: hidden;
     display: flex;
@@ -392,24 +478,22 @@ CELULAR!!!
     text-justify: center;
     text-align: center;
   }
-  .nav-list li{
+  .nav-list li {
     padding: 5px;
     align-items: center;
     justify-content: center;
     align-items: center;
   }
-  
+
   .nav-list li a {
-    transition: .5s linear;
+    transition: 0.5s linear;
     color: #87c830;
     font-family: "tituloCentral";
     font-size: 50px;
-    background-color:inherit;
+    background-color: inherit;
     border-radius: inherit;
     padding: 0;
-
   }
-
 
   /* SECTION TITULO CENTROAL--------- */
   .tituloCentral {
@@ -425,14 +509,14 @@ CELULAR!!!
     padding: 0.2rem;
   }
 
-  
   .tituloCentral .t1,
   .subT1 {
     color: #fc59a3;
-    font-size: 1.9rem;
+    font-size: 110%;
     font-family: "titulo";
-    margin-bottom: -20px;
-    margin-top: 15px;
+    margin-bottom: -29px;
+    margin-top: -10px;
+    width: 100%;
   }
 
   .tituloCentral .t2,
@@ -440,10 +524,28 @@ CELULAR!!!
     color: #fc59a3;
     font-size: 0.8rem;
     font-family: "titulo";
+    margin: 0px;
+  }
+
+  .btn-sl {
+    display: block;
   }
 
   .tituloCentral img {
     width: 80%;
+  }
+
+  .tituloCentral .imgNutri {
+    margin: 0px;
+  }
+
+  .tituloCentral .imgNutri img {
+    margin: 0px;
+  }
+
+  .tituloCentral .subtituloP {
+    margin-top: -30px;
+    width: 90%;
   }
 
   .tituloCentral p {
@@ -452,54 +554,69 @@ CELULAR!!!
     margin-right: 2rem;
   }
 
-
-
-  .hide{
+  .hide {
     display: none;
   }
 
-  .hide2{
+  .hide2 {
     display: none;
   }
-  
 
-  .show{
+  .show {
     display: block;
   }
 
-  .show2{
+  .show2 {
     display: block;
   }
 
-
-
-
-
-
-
-  /* <!-- SECTION CONOCER------> */
+  /* <!-- SECTION CONOCER-----------------------> */
   .sectionConocer {
+    margin-top: 10px;
     display: grid;
     justify-items: center;
     justify-content: center;
-    gap: 1.5rem;
+    /* background-color: olivedrab; */
   }
 
   .sectionConocer .tituloCuerpo,
-  .tituloServicios{
+  .tituloServicios {
     font-family: "tituloCentral";
-    font-size: 45px;
+    font-size: 300%;
   }
 
-  
+  .sectionConocer .body {
+    margin-top: 10px;
+    grid-template-columns: 1fr;
+  }
+
   .sectionConocer img {
     width: 50%;
   }
-  
+
+  .sectionConocer .textoCuerpo {
+    /* display: grid;
+    margin-left: 2rem;
+    margin-right: 2rem; */
+    margin-top: -50px;
+    width: 90%;
+    justify-items: center;
+    display: grid;
+    font-size: large;
+    font-family: "textoGral3";
+    justify-items: center;
+    padding: 2%;
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: #c7ddac;
+    text-decoration: NONE;
+  }
+
+  /* SECTION DE SERVICIOS-------- */
+
   .sectionServicios .tituloServicios {
     text-align: center;
   }
-  
 
   .Conteiner4 .block {
     display: grid;
@@ -529,7 +646,7 @@ CELULAR!!!
     align-items: center;
     text-align: center;
   }
-  
+
   .Conteiner4 img {
     width: 80%;
     border-radius: 10px;
@@ -543,13 +660,7 @@ CELULAR!!!
     font-size: medium;
   }
 
-
-
-
-
-
-
-  /* CSS DE CONTACTO CON BOOTSTRAP */
+  /* CSS DE CONTACTO CON BOOTSTRAP----------- */
   .contacto {
     display: grid;
     margin: 0px;
@@ -558,7 +669,6 @@ CELULAR!!!
   }
 
   .contacto .cabecera {
-    
     width: 100%;
     font-size: 60px;
     letter-spacing: 3.5px;
@@ -567,20 +677,17 @@ CELULAR!!!
     color: #fc59a3;
     font-size: 4rem;
     font-family: "tituloCentral";
-    
   }
 
-  .contacto .nombre, 
-  .apellido, 
-  .telefono, 
-  .correo, 
-  .consulta{
+  .contacto .nombre,
+  .apellido,
+  .telefono,
+  .correo,
+  .consulta {
     color: #fc59a3;
     font-size: 2rem;
-    font-family: "tituloCentral";    
+    font-family: "tituloCentral";
   }
-
-
 
   /* Estilos generales del botón */
   .contacto .nutrition-button {
@@ -596,6 +703,8 @@ CELULAR!!!
     background-color: #4caf50;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    width: inherit;
+    height: inherit;
   }
 
   .contacto .placeContacto {
@@ -613,8 +722,6 @@ CELULAR!!!
     box-shadow: 0 0 5px #87c830;
   }
 
-
-
   /* css FOOTER */
 
   .footer {
@@ -626,20 +733,22 @@ CELULAR!!!
   }
   .footer .redes {
     display: flex;
-    justify-content: space-evenly;
     flex-grow: 5;
+    gap: 5%;
+
   }
 
   .footer .empresa {
     font-size: 70%;
     color: white;
   }
-  .footer .redes button {
-    width: 2rem;
-  }
+  /* .footer .redes button {
+    width: 2.5rem;
+  } */
 
   .footer .redes img {
-    width: 1.5rem;
+    width: 3rem;
+    margin: 15px;
   }
 
   .what-btn {
@@ -649,11 +758,10 @@ CELULAR!!!
     z-index: 9999;
   }
 
-  .what-btn img{
+  .what-btn img {
     width: 3rem;
     animation: whatsapp-animation 1s infinite;
   }
-  
 
   @keyframes whatsapp-animation {
     0% {
@@ -664,7 +772,7 @@ CELULAR!!!
     }
     10% {
       transform: translateY(0);
-    } 
+    }
   }
 }
 
@@ -674,4 +782,3 @@ CELULAR!!!
   gap: 2rem;
   padding: 10px;
 } */
-

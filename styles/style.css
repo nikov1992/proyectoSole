@@ -163,7 +163,7 @@ header .menu {
 .tituloCentral .imgNutri {
   width: 70%;
   margin-top: 30px;
-  
+
 }
 
 .tituloCentral .imgNutri img {
@@ -711,7 +711,7 @@ CELULAR!!!
   .contacto .placeContacto {
     text-align: start;
     /* buscar poosicion del placeHOLDER ARRIBA  */
-    height: 10rem;
+    height: 3rem;
   }
 
   .contacto .nutrition-button:hover {

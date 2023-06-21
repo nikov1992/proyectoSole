@@ -48,21 +48,7 @@
   }
 }
 
-.btn-sl {
-  /* display: inline-block; */
-  padding: 3px;
-  border: none;
-  border-radius: 5px;
-  font-size: 15px;
-  font-weight: bold;
-  text-align: center;
-  text-decoration: none;
-  color: #fff;
-  font-family: "textoGral3";
-  background-color: #4caf50;
-  cursor: pointer;
-  /* box-shadow: 0px 0px 10px 0px #4caf50; */
-}
+
 
 header {
   display: flex;
@@ -588,7 +574,21 @@ CELULAR!!!
 
   .btn-sl {
     display: block;
+    padding: 3px;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    font-family: "textoGral3";
+    background-color: #4caf50;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px 0px #4caf50;
   }
+
+  
 
   .tituloCentral img {
     width: 80%;

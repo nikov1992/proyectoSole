@@ -1,0 +1,299 @@
+* {
+  margin: 0px;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "tituloCentral";
+  src: url(../fonts/Vintage.otf);
+}
+
+@font-face {
+  font-family: "fontHeader";
+  src: url(../fonts/Pakuintho-BWEP8.ttf);
+}
+
+@font-face {
+  font-family: "titulo";
+  src: url(../fonts/Titulo.otf);
+}
+
+@font-face {
+  font-family: "textoGral3";
+  src: url(../fonts/textoGral.ttf);
+}
+
+.what-btn {
+  position: fixed;
+  bottom: 10px;
+  right: 20px;
+  z-index: 9999;
+}
+
+.what-btn img {
+  width: 3rem;
+  animation: whatsapp-animation 1s infinite;
+}
+
+@keyframes whatsapp-animation {
+  0% {
+    transform: translateY(0);
+  }
+  20% {
+    transform: translateY(-30px);
+  }
+  10% {
+    transform: translateY(0);
+  }
+}
+
+/* HEADDDDERRRRRRR */
+header {
+  display: flex;
+  justify-content: space-between;
+  font-family: sans-serif;
+  padding: 10px;
+  width: 100%;
+  height: 100px;
+  align-items: center;
+  background-color: #c7ddac;
+}
+
+header .menu {
+  height: 100%;
+}
+
+.logo {
+  width: 150px;
+  margin-top: 50px;
+}
+
+.menu .letraMenu {
+  display: none;
+}
+
+.nav-list {
+  display: flex;
+  list-style-type: none;
+  gap: 2rem;
+  font-family: "fontHeader";
+  font-size: 2rem;
+  color: #fff;
+  margin-top: 15px;
+  padding-right: 2rem;
+}
+
+.nav-list li a {
+  text-decoration: none;
+  color: #fff;
+  background-color: rgba(227, 71, 126, 0.5);
+  padding: 10px;
+  border-radius: 15px;
+}
+
+.abrir-menu,
+.cerrar-menu,
+.btnMenu {
+  display: none;
+}
+
+.nav-list a:hover {
+  transition: all 0.3s ease;
+  background-color: #de2889;
+  color: #ffff;
+  border-radius: 15px;
+  font-size: 2.5rem;
+  cursor: pointer;
+}
+
+/* PROXIMANTEEEEEE */
+
+.titulo {
+  display: flex;
+  color: #fc59a3;
+  justify-content: center;
+  margin-top: 20%;
+  /* margin-bottom: 100%; */
+  font-size: 4rem;
+  font-family: "tituloCentral";
+}
+
+/* FOOOTEEEERRR-------------------------- */
+
+.footer {
+  display: flex;
+  justify-content: center;
+  color: rgba(0, 0, 0, 0.427);
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  position: absolute;
+  bottom: 0;
+}
+
+.footer .empresa {
+  font-size: 100%;
+  color: rgba(0, 0, 0, 0.427);
+}
+
+@media screen and (max-width: 550px) {
+  .Conteiner4 {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 0;
+  }
+
+  header {
+    height: 50px;
+    background-color: #87c830;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  header .menu {
+    display: flex;
+    align-items: center;
+  }
+
+  header .letraMenu {
+    font-family: "titulo";
+  }
+
+  .menu .letraMenu {
+    display: block;
+  }
+
+  .abrir-menu,
+  .cerrar-menu,
+  .btnMenu {
+    border: 0;
+    display: block;
+    cursor: pointer;
+    font-size: 1.3rem;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 10px;
+  }
+
+  .nav .btnMenu {
+    top: 10;
+    right: 0;
+    bottom: 0;
+  }
+
+  .logo {
+    max-width: 20%;
+    margin-top: 40px;
+  }
+
+  .menu .letraMenu {
+    display: show;
+  }
+
+  .nav {
+    transition: 0.3s linear;
+    opacity: 0;
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(251, 251, 251, 0.95);
+    padding: 1rem;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .nav.visible {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .nav-list {
+    display: grid;
+    gap: 3rem;
+    justify-content: center;
+    align-items: center;
+    text-justify: center;
+    text-align: center;
+  }
+  .nav-list li {
+    padding: 5px;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .nav-list li a {
+    transition: 0.5s linear;
+    color: #87c830;
+    font-family: "tituloCentral";
+    font-size: 50px;
+    background-color: inherit;
+    border-radius: inherit;
+    padding: 0;
+  }
+
+
+
+  .titulo {
+    display: flex;
+    color: #fc59a3;
+    justify-content: center;
+    margin-top: 60%;
+    /* margin-bottom: 100%; */
+    font-size: 4rem;
+    font-family: "tituloCentral";
+  }
+
+  /* css FOOTER */
+
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    color: rgba(0, 0, 0, 0.427);
+    align-items: center;
+    padding: 0.3rem;
+    position: absolute;
+    bottom: 0;
+
+
+    /* position: static; */
+  }
+  .footer .empresa {
+    font-size: 70%;
+    color: rgb(182, 180, 180);
+  }
+  /* .footer .redes button {
+      width: 2.5rem;
+    } */
+
+  .what-btn {
+    position: fixed;
+    bottom: 10px;
+    right: 20px;
+    z-index: 9999;
+  }
+
+  .what-btn img {
+    width: 3rem;
+    animation: whatsapp-animation 1s infinite;
+  }
+
+  @keyframes whatsapp-animation {
+    0% {
+      transform: translateY(0);
+    }
+    20% {
+      transform: translateY(-30px);
+    }
+    10% {
+      transform: translateY(0);
+    }
+  }
+}

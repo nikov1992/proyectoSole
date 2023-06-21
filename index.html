@@ -23,10 +23,9 @@
             <ul class="nav-list">
               <button class="btnMenu" id="cerrar">
               <i class="bi bi-x-lg"></i></button>
-              <li><a href="#">HOME</a></li>
-              <li><a href="#">PRODUCTOS</a></li>
-              <li><a href="#">PREGUNTAS</a></li>
-              <li><a href="#">CONTACTO</a></li>
+              <li><a href="./index.html">HOME</a></li>
+              <li><a href="./pages/productos.html">PRODUCTOS</a></li>
+              <li><a href="#contacto">CONTACTO</a></li>
             </ul>
           </nav>
       </div>
@@ -34,7 +33,7 @@
 
 
     <!-- SECTION TITULO CENTRAL ----->
-    <div class="tituloCentral">
+    <div class="tituloCentral" id="home">
       <div class="imgNutri">
         <img src="./img/nutrilargo.png" alt="nutriLogo">
       </div>
@@ -121,37 +120,40 @@
     
 
     <!-- CONTACTO POR NICO------------>
-    <div class="contacto">
+    <div class="contacto" id="contacto">
       <div class="cabecera">-Contacto-</div>
       <div class="nombre">*Nombre</div>
-      <input id="inpNombre" type="text">
+      <input id="box" type="text">
       <div class="apellido">*Apellido</div>
-      <input id="inpApellido" type="text">
+      <input id="box" type="text">
       <div class="telefono">*Telefono</div>
-      <input id="inpTelefono" type="number" placeholder="solo numeros del 0-9">
+      <input id="box" type="number" placeholder="solo numeros del 0-9">
       <div class="correo">Correo</div>
-      <input id="inpCorreo" type="text" placeholder="tucorreo@ejemplo">
+      <input id="box" type="text" placeholder="tucorreo@ejemplo">
       <div class="consulta">*Consulta</div>
-      <input class="placeContacto" id="inpConsulta" type="text" placeholder="Detallanos tu consulta..">
-      <br><br>
+      <div id="contenedor">
+        <textarea id="miTextArea" oninput="ajustarTamano()"></textarea>
+      </div>
       <button class="nutrition-button" id="enviar">Enviar</button>
+
+      <div class="seguime">
+        <p class="seguimeP">Seguime en Instagram</p>
+      </div>
+      <div class="redes">
+        <a class="link" href="https://www.instagram.com/nutri.pediab/"><img src="./img/instagram.png"  alt="instagram"></a>
+      </div>
     </div>
 
 
     <!-- BOTON DE WHATSAPP -->
-    <a href="https://wa.me/541153836633?text=Hola moroshoo hummmm oh sii"target="_blank" class="what-btn">
+    <a href="https://wa.me/5491123063105?text= Hola, necesitaria ponerme en contacto por lo siguiente: "target="_blank" class="what-btn">
       <img src="./img/whatsapp.png" alt="WhatsApp">
     </a>
     
 
     <!-- FOOTER ---------------------->
     <div class="footer">
-      <div class="redes">
-        <a href="https://chat.openai.com/"><img src="./img/instagram.png"  alt="instagram"></a>
-        <a href="https://chat.openai.com/"><img src="./img/facebook.png"  alt="instagram"></a>
-        <a href="https://chat.openai.com/"><img src="./img/youtube.png"  alt="instagram"></a>
-      </div>
-      <div class="empresa">Disegnid by "@NLDigitaL"</div>
+      <div class="empresa">Designed by "@NLDigitaL"</div>
     </div>
     <script src="./main.js"></script>
   </body>

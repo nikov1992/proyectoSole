@@ -53,4 +53,11 @@ function mostrarTexto2 (){
 }
 
 
+//FUNCION PARA LA SECCION DE CONTACTO
+function ajustarTamano(elemento) {
+  elemento.style.height = "auto";
+  // elemento.style.height = elemento.scrollHeight + "px";
+}
+
+
 

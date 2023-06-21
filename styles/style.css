@@ -78,7 +78,7 @@ header {
 }
 
 header .menu {
-  height: 100%;
+  height: 105%;
 }
 
 .logo {
@@ -347,6 +347,37 @@ p {
   font-size: 2.5rem;
 }
 
+
+.contacto .nutrition-button {
+  width: 25%;
+  height: 35px;
+  /* padding: 3px; */
+  border: none;
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: bold;
+  /* text-align: center; */
+  /* text-decoration: none; */
+  color: #fff;
+  font-family: "textoGral3";
+  background-color: #4caf50;
+  /* cursor: pointer; */
+  justify-self: center;
+  box-shadow: #de2889;
+
+}
+
+
+.contacto .nutrition-button:hover {
+  background-color: #4b7613;
+  transition: all 0.2s ease;
+  background-color: #de2889;
+  color: #ffff;
+  border-radius: 20px;
+  font-size: 23px;
+}
+
+
 #box{
   width: 100%;
 }
@@ -364,22 +395,6 @@ p {
   box-sizing: border-box; /* Incluir padding y borde en el tamaño total */
 }
 
-.contacto .nutrition-button {
-  width: 25%;
-  height: 35px;
-  padding: 3px;
-  border: none;
-  border-radius: 5px;
-  font-size: 15px;
-  font-weight: bold;
-  text-align: center;
-  text-decoration: none;
-  color: #fff;
-  font-family: "textoGral3";
-  background-color: #4caf50;
-  cursor: pointer;
-  justify-self: center;
-}
 
 /* logo de nutri */
 
@@ -392,6 +407,11 @@ p {
 
 .contacto .redes .link img{
   width: 55px;
+}
+
+.contacto .redes .link img:hover {
+  transition: all 0.2s ease;
+  width: 80px;
 }
 
 .contacto .redes{
@@ -733,15 +753,15 @@ CELULAR!!!
     display: inline-block;
     padding: 10px 20px;
     border: none;
-    border-radius: 5px;
-    font-size: 16px;
+    /* border-radius: 5px; */
+    /* font-size: 16px; */
     font-weight: bold;
     text-align: center;
     text-decoration: none;
-    color: #fff;
-    background-color: #4caf50;
+    /* color: #fff; */
+    /* background-color: #4caf50; */
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    /* transition: background-color 0.3s ease; */
     width: inherit;
     height: inherit;
   }
@@ -750,15 +770,6 @@ CELULAR!!!
     text-align: start;
     /* buscar poosicion del placeHOLDER ARRIBA  */
     height: 3rem;
-  }
-
-  .contacto .nutrition-button:hover {
-    background-color: #87c830;
-  }
-
-  .nutrition-button:focus {
-    outline: none;
-    box-shadow: 0 0 5px #87c830;
   }
 
   /* css FOOTER */

@@ -120,29 +120,36 @@
     
 
     <!-- CONTACTO POR NICO------------>
-    <div class="contacto" id="contacto">
-      <div class="cabecera">-Contacto-</div>
-      <div class="nombre">*Nombre</div>
-      <input id="box" type="text">
-      <div class="apellido">*Apellido</div>
-      <input id="box" type="text">
-      <div class="telefono">*Telefono</div>
-      <input id="box" type="number" placeholder="solo numeros del 0-9">
-      <div class="correo">Correo</div>
-      <input id="box" type="text" placeholder="tucorreo@ejemplo">
-      <div class="consulta">*Consulta</div>
-      <div id="contenedor">
-        <textarea id="miTextArea" oninput="ajustarTamano()"></textarea>
-      </div>
-      <button class="nutrition-button" id="enviar">Enviar</button>
+    <!-- <div class="contacto" id="contacto"> -->
+      <form class="contacto" id="contacto" action="https://formsubmit.co/mspturnos@gmail.com" method="POST">
+        <div class="cabecera">-Contacto-</div>
+        <div class="nombre">*Nombre</div>
+        <input id="box" type="text" name="Nombre">
+        <div class="apellido">*Apellido</div>
+        <input id="box" type="text" name="Apellido">
+        <div class="telefono">*Telefono</div>
+        <input id="box" type="number" name="telefono" placeholder="solo numeros del 0-9">
+        <div class="correo">Correo</div>
+        <input id="box" type="text" name="correo" placeholder="tucorreo@ejemplo">
+        <div class="consulta">*Consulta</div>
+        <div id="contenedor">
+          <textarea name="consulta" id="miTextArea" oninput="ajustarTamano()"></textarea>
+        </div>
 
-      <div class="seguime">
-        <p class="seguimeP">Seguime en Instagram</p>
-      </div>
-      <div class="redes">
-        <a class="link" href="https://www.instagram.com/nutri.pediab/"><img src="./img/instagram.png"  alt="instagram"></a>
-      </div>
-    </div>
+        <button type="submit" class="nutrition-button" id="enviar">Enviar</button>
+
+        <div class="seguime">
+          <p class="seguimeP">Seguime en Instagram</p>
+        </div>
+        <div class="redes">
+          <a class="link" href="https://www.instagram.com/nutri.pediab/"><img src="./img/instagram.png"  alt="instagram"></a>
+        </div>
+
+        <input type="hidden" name="_next" value="http://127.0.0.1:5500/">
+        <input type="hidden" name="_captcha" value="false">
+      </form>
+
+    <!-- </div> -->
 
 
     <!-- BOTON DE WHATSAPP -->
